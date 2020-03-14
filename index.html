@@ -26,8 +26,8 @@
                             placeholder="Имя" required />
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="email" name="email" pattern="^\w+[-.\w]*\w+@(\w+[\w-]+\.)+\w+$"
-                            placeholder="E-Mail" required />
+                        <input class="form__input" type="email" name="email"
+                            pattern="^[a-z]+[-.\w]*@(\w+[\w-]+)+(\.[a-z]{2,3})$" placeholder="E-Mail" required />
                         <span class="form__error">e-mail в формате: students-yandex@yandex.ru</span>
                     </div>
                     <div class="form__field">
@@ -38,7 +38,7 @@
                     </div>
                     <div class="form__field">
                         <input class="form__input" type="url" name="url"
-                            pattern="^http(s)?:\/\/(www\.)?(([0-2][0-9][0-9]\.){3}[0-2][0-9][0-9]|(\w+[\w-]+\.)+\w+)(:\d{2,4})?#?"
+                            pattern="^http(s)?:\/\/(www\.)?(?!(www\.))(([0-2][0-9][0-9]\.){3}[0-2][0-9][0-9]|(\w+[\w-.\/]+)+\w+\/?)(:\d{2,5})?#?\d?$"
                             placeholder="Ваш сайт" required />
                         <span class="form__error">URL в формате: http://mysite.ru</span>
                     </div>
